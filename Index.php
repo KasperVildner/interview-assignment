@@ -8,10 +8,7 @@ if($db->connect_errno > 0){
 }
 
 //Get all users from database
-$sql = <<<SQL
-SELECT *
-FROM `users`
-SQL;
+$sql = "SELECT * FROM users";
 
 //Connection error massage
 if(!$result = $db->query($sql)){
