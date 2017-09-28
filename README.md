@@ -1,15 +1,13 @@
-# Job interview assignment
-We kindly ask you to solve the task below. By solving and submitting this assignment you provide us with insights in how you solve real-world problems. What we will be looking at is topics such as: choice of technology, structuring of code, use of VCS, selection of 3rd party libraries, documentation etc.
+# My solution for the job interview assignment
+This solution take a query that selects all users in a database and write them into a local file. The solution then checks if the file is empty to know if it can safely delete the users from the database.
 
-## The task
-Develop a solution that, given a select query, can read data from a database, write it to a local file and then delete the data from the database. The solution should verify that data is written to the file before deleting it from the database.
+# How to use/test
+This solution is made on a localhost using WAMP server. To test the code you have to do the following:
+ - Create a local database WAMP - PhpMyAdmin and name it "cegoopgave"
+ - Insert the users using the SQL dump in this repo
+ - Open the index.php and change the location to store the file in line 24-27 to where you want it.
+ - Open an internet explore and type into the address bar "localhost/YourDesireFileLocation"
+If everything works as desired a massage should appear saying "File with users has been created and users are removed from the database"
 
-- Use Bash, PHP, JavaScript or Go as the language
-- Use MySQL, MariaDB, CockroachDB or SQLite as the database
-
-Please use the data set provided in the SQL dump in this repo.
-
-## Expectations
-Fork this repo. Solve the task below. Push your code to a public repo and send us the link via email or simply send us a tarball (please include any VCS metadata) in an email to pf@cego.dk.
-
-Your solution should include a short readme describing your solution, how to use/test it and any final considerations such as known errors, next steps, security concerns etc. Don’t worry we are not expecting this thing to be perfect.
+# Final considertations
+Since I have not worked with any of the languages listed in the task or have learned about them at school, I hope you can bear with me if I do not write in common code terms or similar.
